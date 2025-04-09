@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="sticker">
+                <i class="fa-brands fa-spotify"></i>
+                <a href="#"></a>
+            </div>
+            <div class="house">
+                <i class="fa-solid fa-house"></i>
+                <a href="#"></a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" id="one"></i>
+                <input type="text" placeholder="What do you want to play?">
+                <i class="fa-solid fa-table-columns" id="two"></i>
+            </div>
+            <div class="btn">
+                <button>Explore Premium</button>
+            </div>
+            <div class="btnone">
+                <i class="fa-solid fa-circle-down"></i>
+                <button>Install App</button>
+            </div>
+            <div class="bell">
+                <i class="fa-solid fa-bell" id="bel"></i>
+            </div>
+            <div class="twoo">
+                <i class="fa-solid fa-2"></i>
+                <!-- <p>2</p> -->
+            </div>
+        </div>
+        <div class="library">
+            <div class="options">
+                <div class="lib-option">
+                    <img src="./assets/library_icon.png" alt="">
+                    <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    <i class="fa-solid fa-arrow-right" id="arrow"></i>
+                </div>
+            </div>
+            <div class="artist"><a href="#">Artists</a></div>
+            <div class="glass">
+                <div class="glassone artist">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="list">
+                    <a href="#">Recents</a>
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="image-container">
+                        <img src="./assets/weeknd.jpeg" alt="The Weeknd">
+                        <span class="play-button">&#9658;</span>
+                    </div>
+                    <h4>The Weeknd</h4>
+                    <p class="artist-text">Artist</p>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="./assets/Air.jpeg" alt="A.R.Rahman">
+                        <span class="play-button">&#9658;</span>
+                    </div>
+                    <h4>A.R.Rahman</h4>
+                    <p class="artist-text">Artist</p>
+                </div>
+                <div class="box" id="arjit">
+                    <div class="image-container">
+                        <img src="./assets/air2.jpeg" alt="Arjit Singh">
+                        <span class="play-button">&#9658;</span>
+                    </div>
+                    <h4>Arjit Singh</h4>
+                    <p class="artist-text">Artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="mainbar">
+            <div class="topper">
+                <div class="top">
+                    <a href="#" class="default">All</a>
+                    <a href="#">Music</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Audiobooks</a>
+                </div>
+                <div class="plays">
+                    <p id="ones">
+                        <img src="./assets/plyas2.png" alt="">
+                        00's Love Hits
+                        <span class="play-button">►</span>
+                    </p>
+
+                    <p id="tos">
+                        <img src="./assets/plays1.png" alt="">
+                        Gurazish Radio
+                        <span class="play-button">►</span>
+
+                    </p>
+                    <p id="trees">
+                        <img src="./assets/plyas3.png" alt="">
+                        Krishna Rap
+                        <span class="play-button">►</span>
+                    </p>
+                    <p id="fous">
+                        <img src="./assets/plays4.png" alt="">
+                        Top50-India
+                        <span class="play-button">►</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="secondmain">
+                <h2>Made For You</h2>
+                <p>show all</p>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Trending Now</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Your Favoraite</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Vijay Nacho</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <div class="secondmain">
+                <h2>Featured Charts</h2>
+                <p>show all</p>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top-50</p>
+                    <p class="card-info">Gobal Songs</p>
+                </div>
+                <div class="card">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top-India</p>
+                    <p class="card-info">chakde pathe</p>
+                </div>
+                <div class="card">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top-50</p>
+                    <p class="card-info">International Hits...</p>
+                </div>
+            </div>
+
+            <div class="secondmain">
+                <h2>Popular artist</h2>
+                <p>show all</p>
+            </div>
+            <div class="cardone">
+                <div class="cd">
+                    <img src="./assets/air2.jpeg" alt="">
+                    <h2>Arjit Singh</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="cd">
+                    <img src="./assets/Air.jpeg" alt="">
+                    <h2>A.R.Rahman</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="cd">
+                    <img src="./assets/honey.jpeg" alt="">
+                    <h2>Honey Singh</h2>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="biggercd">
+                <h2>Ep 405:The Forced That Shaped Hinduism</h2>
+                <p>Episode.The Seen and the Unseen-Hosted By Amit Verma</p>
+                <img src="./assets/amit.jpeg" alt="">
+                <h4>Nov24.5hr 53min-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dolorum iusto velit amet. Natus ab iusto dicta quo ut, ullam molestias laboriosam alias?</p></h4>
+            </div>
+            <div class="biggercd2 biggercd">
+                <h2>APT Songs ALBUM</h2>
+                <p>Episode.The Super APT LGM'S Prodcast</p>
+                <img src="./assets/APT.jpeg" alt="">
+                <h4>Nov24.5hr 53min-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dolorum iusto velit amet. Natus ab iusto dicta quo ut, ullam molestias laboriosam alias?</p></h4>
+            </div>
+            <div class="biggercd3 biggercd">
+                <h2>GET UP AND START GRINDING</h2>
+                <p>Episode.weekly motivation BY:-Kabir Singh</p>
+                <img src="./assets/grind.jpeg" alt="">
+                <h4>Nov24.5hr 53min-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dolorum iusto velit amet. Natus ab iusto dicta quo ut, ullam molestias laboriosam alias?</p></h4>
+            </div>
+            <div class="biggercd4 biggercd" >
+                <h2>Mahabharata ep 76: Vanaprastha and the End oF..</h2>
+                <p>Episode.The Story of Mahabharata</p>
+                <img src="./assets/maha.jpeg" alt="">
+                <h4>Nov24.5hr 53min-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dolorum iusto velit amet. Natus ab iusto dicta quo ut, ullam molestias laboriosam alias?</p></h4>
+            </div>
+            <div class="footer">
+                <div class="line">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="music">
+        <div class="album">
+            <img src="./assets/ed.jpeg" alt="">
+            <h4>Dwithi</h4>
+            <p>KabirSingh</p>
+            <i class="fa-regular fa-heart" class="iii"></i>
+            <i class="fa-solid fa-radio"></i>
+        </div>
+        <div class="player">
+            <div class="player-controls">
+                <img src="./assets/player_icon1.png" class="player-control-icon">
+                <img src="./assets/player_icon2.png" class="player-control-icon">
+                <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height:2rem">
+                <img src="./assets/player_icon4.png" class="player-control-icon">
+                <img src="./assets/player_icon5.png" class="player-control-icon">
+            </div>
+            <div class="playback-bar">
+                <span class="curr-time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="tot-time">3:33</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i class="fa-solid fa-layer-group"></i>
+            <i class="fa-solid fa-laptop" ></i>
+            <i class="fa-solid fa-volume-high" ></i>
+            <input type="range" min="0" max="100" class="progress-bar" step="1">
+            <i class="fa-solid fa-up-right-and-down-left-from-center" ></i>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const topper = document.querySelector('.topper');
+        const hoverMappings = {
+            ones: 'hover-ones',
+            tos: 'hover-tos',
+            trees: 'hover-trees',
+            fous: 'hover-fous',
+        };
+
+        // Add hover listeners to each `p` element
+        document.querySelectorAll('.plays p').forEach((p) => {
+            const hoverClass = hoverMappings[p.id];
+
+            p.addEventListener('mouseenter', () => {
+                topper.classList.add(hoverClass); // Add corresponding class
+            });
+
+            p.addEventListener('mouseleave', () => {
+                topper.classList.remove(hoverClass); // Remove corresponding class
+            });
+        });
+    });
+</script>
+
+
+
+</html>

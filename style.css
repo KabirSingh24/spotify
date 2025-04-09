@@ -1,0 +1,780 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    /* position: fixed; */
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* padding: 0.1rem; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    height: 64px;
+    width: 1186px;
+    background-color: #0000;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 1.65rem;
+    cursor: pointer;
+}
+
+.sticker i {
+    font-size: 2.25rem;
+}
+
+.house i {
+    font-size: 1.35rem;
+    border-radius: 2px solid red;
+    border-radius: 50%;
+    background-color: rgb(59, 59, 59);
+    padding: 0.56rem 0.56rem;
+    height: 1.55rem;
+}
+.house i:hover{
+    font-size: 1.40rem;
+}
+
+.search {
+    position: relative;
+    background-color: rgb(59, 59, 59);
+    padding: 0.56rem 2.76rem;
+    height: 1.92rem;
+    width: 22.78rem;
+    border-top-left-radius: 1.75rem;
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    border-bottom-left-radius: 1.75rem;
+}
+
+.search #one {
+    position: absolute;
+    right: 26rem;
+    top: 0.95rem;
+    font-size: 1.28rem;
+    opacity: 0.5;
+}
+
+.search input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.96rem;
+    bottom: 0.96rem;
+    border: none;
+    border-right: 2px solid rgb(190, 189, 189);
+    padding-right: 0.38rem;
+    font-size: 1rem;
+    width: 20.35rem;
+
+}
+.search #two {
+    position: absolute;
+    left: 24.37rem;
+    top: 0.95rem;
+    font-size: 1.28rem;
+    opacity: 0.5;
+}
+
+.search:hover {
+    background-color: rgb(73, 72, 72);
+}
+.search:hover #one{
+    background-color: rgb(73, 72, 72);
+    opacity: 1;
+}
+
+.search #two:hover {
+    font-size: 1.50rem;
+    opacity: 1;
+}
+
+.btn button{
+    all: unset;
+    background-color: white;
+    color: black;
+    border-top-left-radius: 0.97rem;
+    border-top-right-radius: 0.97rem;
+    border-bottom-left-radius: 0.97rem;
+    border-bottom-right-radius: 0.97rem;
+    padding: 0.47rem 0.67rem;
+    font-size: 0.87rem;
+    font-weight: bold;
+
+}
+.btn button:hover{
+    font-size: 0.90rem;
+    background-color: rgb(231, 229, 229);
+}
+
+.btnone button{
+    all: unset;
+    font-weight: bold;
+    font-size: 0.87rem;
+}
+.btnone button:hover{
+    font-size: 1rem;
+}
+
+.bell #bel{
+    opacity: 0.5;
+}
+.bell #bel:hover{
+    opacity: 1;
+}
+
+.twoo i{
+    font-weight: bold;
+    font-size: 0.97rem;
+    color: black;
+    border-radius: 50%;
+    background-color: rgb(250, 114, 182);
+    padding: 0.63rem 0.77rem;
+    box-shadow: 0 0 1rem rgba(216, 215, 215, 0.863);
+}
+.twoo i:hover{
+    font-size: 1.2rem;
+}
+/* 
+.twoo p{
+    font-weight: bold;
+    font-size: 0.97rem;
+    color: black;
+    border-radius: 50%;
+    background-color: rgb(250, 114, 182);
+    padding: 0.43rem 0.77rem;
+    box-shadow: 0 0 1rem rgba(216, 215, 215, 0.863)
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.library {
+
+    height: 100%;
+    width: 22.2rem;
+    background-color: #121212;
+    border-radius: 1rem; /*16px */
+    padding: 0.75rem 0.75rem;
+    position: relative;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options .lib-option{
+    position: relative;
+    left: 0.75rem;
+}
+.lib-option a{
+    all: unset;
+    font-size: 1.15rem;
+    padding: 0.5rem 0.85rem;
+    opacity: 0.5;
+}
+.lib-option img{
+    height: 1.20rem;
+    width: 1.25rem;
+    opacity: 0.5;
+}
+.lib-option {
+    position: relative;
+    left: 0.75rem;
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem; 
+    cursor: pointer; 
+    padding: 0.5rem; 
+}
+
+.lib-option img,
+.lib-option a {
+    opacity: 0.5;
+    transition: opacity 0.3s ease; 
+}
+
+.lib-option:hover img,
+.lib-option:hover a {
+    opacity: 1; 
+}
+
+.icons{
+    display: flex;
+}
+.icons i{
+    padding: 0.25rem 0.35rem;
+}
+.icons i{
+    display: flex;
+    font-size: 1.25rem;
+    opacity: 0.25;
+    transition: opacity 0.3s ease; 
+}
+.icons i{
+    margin: 0.60rem;
+}
+.icons #plus:hover{
+    background-color: rgb(59, 59, 59) ;
+    border-radius: 50%;
+}
+.icons #arrow:hover{
+    background-color: rgb(59, 59, 59)  ;
+    border-radius: 50%;
+}
+.icons #plus:hover{
+    opacity: 0.75;
+}
+.icons #arrow:hover{
+    opacity: 0.75;
+}
+
+.artist{
+    background-color: #121212;
+    border-radius: 1rem; /*16px */
+    padding: 0.75rem 0.75rem;
+    position: relative;
+}
+.artist a{
+    all: unset;
+    background-color: rgb(59, 59, 59) ;
+    border-top-left-radius: 0.95rem;
+    border-top-right-radius: 0.95rem;
+    border-bottom-right-radius: 0.95rem;
+    border-bottom-left-radius: 0.95rem;
+    padding: 0.50rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.75;
+}
+.artist a:hover{
+    opacity: 0.95;
+}
+
+.glass{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.glassone i{
+    position: relative;
+    opacity: 0.65;
+    padding: 0.55rem 0.55rem;
+    cursor: pointer;
+}
+.glassone i:hover{
+    background-color: rgb(59, 59, 59) ;
+    border-radius: 50%;
+    opacity: 0.95;
+}
+
+.list{
+    padding: 0.75rem 0.75rem;
+    opacity: 0.65;
+    position: relative;
+}
+.list a{
+    all: unset;
+    font-size: 0.85rem;
+    font-weight: 0.87rem;
+    position: relative;
+    right: 0.32rem;
+    cursor: pointer;
+}
+.list i{
+    font-weight: 0.87rem;
+    opacity: 0.65;
+    cursor: pointer;
+}
+.list:hover{
+    font-weight: 0.97rem;
+    opacity: 1;
+}
+
+.boxes {
+    padding: 0.23rem 0.56rem;
+    cursor: pointer;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .image-container img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  
+  .image-container .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.3rem;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .box h4 {
+    position: relative;
+    right: 3.30rem;
+    bottom: 0.90rem;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+  
+  .box p {
+    position: relative;
+    top: 0.90rem;
+    right: 14.20rem;
+    opacity: 0.65;
+  }
+  
+  #arjit h4 {
+    position: relative;
+    right: 3.60rem;
+    bottom: 0.90rem;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+  
+  .box:hover {
+    background-color: rgb(59, 59, 59);
+    opacity: 0.95;
+  }
+  
+
+  .box:hover .play-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.mainbar {
+    margin: 0rem 0.50rem;
+}
+
+.mainbar .top {
+    padding: 2.24rem 2.23rem;
+    cursor: pointer;
+}
+
+.mainbar .top a {
+    all: unset;
+    padding: 0.60rem 0.80rem;
+    margin: 0 0.30rem;
+    background-color: rgb(59, 59, 59);
+    border-radius: 0.95rem;
+    opacity: 0.85;
+    font-weight: bold;
+    font-size: 0.90rem;
+}
+
+.mainbar .top a:hover {
+    opacity: 1;
+}
+
+.mainbar .top .default {
+    background-color: white;
+    color: black;
+    border: 0.5px solid rgb(200, 200, 200);
+    border-radius: 1.20rem;
+    padding: 0.50rem 0.70rem;
+    opacity: 1;
+}
+
+.plays {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(2, auto); 
+    gap: 0.45rem;
+    margin: 0rem 2rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+    width: 35rem;
+    position: relative;
+    right: 0.20rem;
+}
+
+.plays p {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    margin: 0rem 0.15rem;
+    border-radius: 0.3rem;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.90;
+    transition: background-color 0.3s ease;
+    padding-right: 3rem; 
+    padding-left: 0.5rem;
+}
+
+.plays p:hover {
+    background-color: rgb(85, 85, 85);
+    opacity: 1;
+}
+
+
+.plays img {
+    width: 55px;
+    height: 3rem;
+    object-fit: cover;  
+    margin-right: 0.40rem;
+}
+
+.plays p .play-button {
+    display: none; 
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(8, 163, 8);
+    color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease, right 0.3s ease;
+}
+.plays p:hover .play-button {
+    display: flex; 
+    opacity: 1;
+    right: 0.5rem; 
+}
+.topper {
+    cursor: pointer;
+    height: 15rem;
+
+}
+
+.topper:hover {
+    background-color: rgba(99, 46, 46, 0.562);
+}
+.topper {
+    transition: background-color 0.3s ease;
+    border-radius: 0.5rem;
+
+}
+
+.topper.hover-ones {
+    background-color: rgba(99, 46, 46, 0.562);
+}
+
+.topper.hover-tos {
+    background-color: rgb(92, 106, 110);
+}
+
+.topper.hover-trees {
+    background-color: rgb(105, 105, 82);
+}
+
+.topper.hover-fous {
+    background-color: rgba(204, 196, 163, 0.432);
+}
+
+.topper .top{
+    position: sticky;   
+    top: 0; 
+    z-index: 15;
+    
+}
+
+
+.secondmain{
+    display: flex;
+    margin: 0 3.30rem ;
+    cursor: pointer;
+}
+.secondmain h2:hover{
+    text-decoration: underline;
+}
+.secondmain p{
+    position: relative;
+    top: 0.70rem;
+    left: 15rem;
+}
+.secondmain p:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.card{
+    background-color: #232323;
+    width: 100px;
+    border-radius: 0.80rem;
+    padding: 1rem 1.50rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+}
+.cards-container{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    margin: 0 1.90rem;
+
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.80rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+.info{
+    display: flex;
+}
+
+
+.cardone{
+    margin: 0 3.30rem;
+    display: flex;
+    cursor: pointer;
+}
+.cd{
+    margin-left: 1rem;
+}
+.cd img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.cd h2{
+    font-size: 1rem;
+}
+.cardone .cd:hover{
+    background-color: rgb(85, 85, 85);
+    border-radius: 0.60rem;
+}
+.cd h2{
+    position: relative;
+    bottom: 0.23rem;
+    left: 0.23rem;
+}
+.cd h2:hover{
+    text-decoration: underline;
+}
+.cd p{
+    position: relative;
+    bottom: 1rem;
+    left: 0.23rem;
+}
+
+
+
+.biggercd{
+    margin: 1rem 6.30rem;
+    padding: 1rem 1rem;
+    background-color: rgb(2, 68, 68);
+    border-radius: 0.70rem;
+    cursor: pointer;
+}
+.biggercd h2:hover{
+    text-decoration: underline;
+}
+.biggercd img {
+    width: 15rem; /* Initial width */
+    height: 15rem; /* Initial height */
+    padding: 0 5rem;
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.biggercd img:hover {
+    width: 12rem; /* Shrunk width */
+    height: 12rem; /* Shrunk height */
+}
+.biggercd4{
+    background-color: rgb(122, 82, 6);
+}
+.biggercd3{
+    background-color: #232323;
+}
+.biggercd2{
+    background-color: rgb(175, 133, 140);
+}
+.mainbar {
+    border-radius: 0.67rem;
+    background-color: #121212;
+    flex: 1;
+    overflow-y: auto;  
+    height: calc(100vh - 72px);  /* Adjust height to take into account your music bar at the bottom */
+}
+
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+.music {
+    position: fixed;
+    background-color: black;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.album{
+    width: 25%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+}
+.album img{
+    width: 30%;
+    margin-right: 8rem;
+}
+.album h4{
+    height: 1rem;
+    font-size: 0.90rem;
+    position: relative;
+    right: 6.40rem;
+    bottom: 0.30rem;
+}
+.album p{
+    height: 1rem;
+    font-size: 0.70rem;
+    position: relative;
+    right: 9.50rem;
+    top: 1rem;
+}
+.album i{
+    height: 1rem;
+    font-size: 1rem;
+    padding: 0 0.40rem;
+    position: relative;
+    right: 8rem;
+    opacity: 0.5;
+    /* top: 1rem; */
+}
+.album i:hover{
+    opacity: 1;
+    /* top: 1rem; */
+}
+.player{
+    width: 50%;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 0.98rem;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.controls{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.controls .progress-bar{
+    width: 40%;
+}
+.controls:hover{
+    opacity: 1;
+}
